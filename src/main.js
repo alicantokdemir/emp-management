@@ -1,7 +1,19 @@
 import {Router} from '@vaadin/router';
 import './views/home.js';
-import './containers/employee/employee-list.js';
-import './containers/employee/employee-edit.js';
+import './views/employee-add.js';
+import './views/employee-list.js';
+
+import {registerTranslateConfig} from 'lit-translate';
+import {use} from 'lit-translate';
+
+registerTranslateConfig({
+  loader: (lang) =>
+    fetch(`src/translations/${lang}.json`).then((res) => res.json()),
+});
+
+const defaultLang = 'en';
+
+use(defaultLang);
 
 const outlet = document.querySelector('#app');
 const router = new Router(outlet);

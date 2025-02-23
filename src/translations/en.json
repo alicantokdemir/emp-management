@@ -1,0 +1,29 @@
+{
+  "Navbar": {
+    "Employees": "Employees",
+    "Add New": "Add New"
+  },
+  "Employees": {
+    "First Name": "First Name",
+    "Last Name": "Last Name",
+    "Date of Employment": "Date of Employment",
+    "Date of Birth": "Date of Birth",
+    "Phone": "Phone",
+    "Email": "Email",
+    "Department": "Department",
+    "Position": "Position"
+  },
+  "Common": {
+    "Save": "Save",
+    "Cancel": "Cancel",
+    "Edit": "Edit",
+    "Delete": "Delete",
+    "Proceed": "Proceed",
+    "Close": "Close",
+    "Add": "Add",
+    "Yes": "Yes",
+    "No": "No",
+    "Are you sure?": "Are you sure?",
+    "Actions": "Actions"
+  }
+}

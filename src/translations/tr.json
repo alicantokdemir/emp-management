@@ -1,0 +1,29 @@
+{
+  "Navbar": {
+    "Employees": "Çalışanlar",
+    "Add New": "Yeni Ekle"
+  },
+  "Employees": {
+    "First Name": "Ad",
+    "Last Name": "Soyad",
+    "Date of Employment": "İşe Başlama Tarihi",
+    "Date of Birth": "Doğum Tarihi",
+    "Phone": "Telefon",
+    "Email": "E-posta",
+    "Department": "Departman",
+    "Position": "Pozisyon"
+  },
+  "Common": {
+    "Save": "Kaydet",
+    "Cancel": "İptal",
+    "Edit": "Düzenle",
+    "Delete": "Sil",
+    "Proceed": "Devam Et",
+    "Close": "Kapat",
+    "Add": "Ekle",
+    "Yes": "Evet",
+    "No": "Hayır",
+    "Are you sure?": "Emin misiniz?",
+    "Actions": "İşlemler"
+  }
+}
