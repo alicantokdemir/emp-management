@@ -1,0 +1,21 @@
+body {
+  min-height: 100vh;
+  background-color: #f8f8f8;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+:root {
+  --primary-color: #fc6200;
+  --secondary-color: #525199;
+
+  --spacing-1: 0.25rem; /* 4px default */
+  --spacing-2: 0.5rem; /* 8px */
+  --spacing-3: 0.75rem; /* 12px */
+  --spacing-4: 1rem; /* 16px */
+  --spacing-5: 1.5rem; /* 24px */
+  --spacing-6: 2.5rem; /* 40px */
+}
