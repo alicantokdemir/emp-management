@@ -4,9 +4,11 @@ import {translate as t} from 'lit-translate';
 import {formatPhoneNumber, formatDate} from '../../utils/format.js';
 
 class EmployeeTable extends LitElement {
-  static properties = {
-    employees: {type: Array},
-  };
+  static get properties() {
+    return {
+      employees: {type: Array},
+    };
+  }
 
   static styles = [
     Fontawesome,
