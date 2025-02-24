@@ -145,12 +145,21 @@ class EmployeeEdit extends LitElement {
     }
 
     if (updatedEmployee.id) {
-      await EmployeeService.updateEmployee(updatedEmployee);
+      const title = t('Common.Are you sure?');
+      const content = t('Employees.RecordWillBeUpdated', {
+        name: this.employee.firstName + ' ' + this.employee.lastName,
+      });
+
+      const cb = () =>
+        EmployeeService.updateEmployee(updatedEmployee).then(() => {
+          Router.go('/employees');
+        });
+
+      openGlobalPopup(title, content, cb);
     } else {
       await EmployeeService.addEmployee(updatedEmployee);
+      Router.go('/employees');
     }
-
-    Router.go('/employees');
   }
 
   render() {

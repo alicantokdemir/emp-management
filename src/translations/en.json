@@ -22,6 +22,7 @@
     "Department": "Department",
     "Position": "Position",
     "RecordWillBeDeleted": "Selected Employee record of {{name}} will be deleted",
+    "RecordWillBeUpdated": "Selected Employee record of {{name}} will be updated",
     "YouAreEditing": "You are editing {{name}}"
   },
   "Common": {

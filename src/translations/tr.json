@@ -22,6 +22,7 @@
     "Department": "Departman",
     "Position": "Pozisyon",
     "RecordWillBeDeleted": "Seçilen {{name}} çalışan kaydı silinecektir",
+    "RecordWillBeUpdated": "Seçilen {{name}} çalışan kaydı güncellenecektir",
     "YouAreEditing": "{{name}} çalışanını düzenliyorsunuz"
   },
   "Common": {
