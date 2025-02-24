@@ -1,6 +1,11 @@
 import {LitElement, html, css} from 'lit';
 
 class AppButton extends LitElement {
+  static properties = {
+    type: {type: String},
+    className: {type: String},
+  };
+
   static styles = css`
     :host {
       display: block;
@@ -29,11 +34,6 @@ class AppButton extends LitElement {
       }
     }
   `;
-
-  static properties = {
-    type: {type: String},
-    className: {type: String},
-  };
 
   constructor() {
     super();
