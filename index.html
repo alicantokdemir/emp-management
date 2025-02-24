@@ -4,13 +4,31 @@
 
   <head>
     <meta charset="utf-8" />
-    <title>Lit Starter Kit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Employee Management System">
+    <meta name="keywords" content="Employee Management System, Employee, Management, System">
+    <title>Employee Management System</title>
+    <link href="https://cdn.skypack.dev/sanitize.css" rel="stylesheet" />
+    <link href="/node_modules/lit-fontawesome/css/font.css" rel="stylesheet">
+    <link href="/node_modules/flatpickr/dist/flatpickr.min.css" rel="stylesheet">
+    <link href="/src/styles/global.css" rel="stylesheet" />
     <script type="module" src="/src/main.js"></script>
   </head>
 
   <body>
-    <a href="/dev/index.html">Component Demo</a>
     <div id="app"></div>
+    <app-popup id="globalPopup"></app-popup>
+
+    <script>
+      // Global function to open popup
+      function openGlobalPopup(title, content, cb) {
+        const popup = document.getElementById('globalPopup');
+        popup.open = true;
+        popup.title = title;
+        popup.content = content;
+        popup.onProceed = cb;
+      }
+    </script>
   </body>
 
 </html>
