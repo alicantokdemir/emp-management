@@ -1,7 +1,7 @@
 import {fixture, html, expect} from '@open-wc/testing';
 import './phone-input.js';
 
-describe.only('PhoneInput', () => {
+describe('PhoneInput', () => {
   it('should render the phone input field', async () => {
     const el = await fixture(html`<phone-input></phone-input>`);
     const input = el.shadowRoot.querySelector('#phone');
@@ -17,10 +17,11 @@ describe.only('PhoneInput', () => {
   it('should dispatch phone-changed event on input', async () => {
     const el = await fixture(html`<phone-input></phone-input>`);
     const input = el.shadowRoot.querySelector('#phone');
-    setTimeout(() => (input.value = '1234567890'));
+    input.value = '1234567890';
     input.dispatchEvent(new Event('input'));
+
     el.addEventListener('phone-changed', (e) => {
-      expect(e.detail).to.equal('1234567890');
+      expect(e.detail).to.equal('901234567890');
     });
   });
 

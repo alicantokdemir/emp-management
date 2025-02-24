@@ -13,6 +13,11 @@ class PhoneInput extends LitElement {
     :host {
       display: block;
     }
+
+    input {
+      width: -webkit-fill-available;
+      padding: var(--spacing-2);
+    }
   `;
 
   firstUpdated() {
@@ -23,9 +28,13 @@ class PhoneInput extends LitElement {
   }
 
   handleInputChange = (e) => {
-    this.dispatchEvent(
-      new CustomEvent('phone-changed', {detail: this.phoneMask.unmaskedValue})
-    );
+    setTimeout(() => {
+      this.dispatchEvent(
+        new CustomEvent('phone-changed', {
+          detail: '90' + this.phoneMask.unmaskedValue,
+        })
+      );
+    }, 0);
   };
 
   render() {
