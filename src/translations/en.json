@@ -1,9 +1,18 @@
 {
+  "App": {
+    "Title": "Employee Management System",
+    "Description": "A simple employee management system",
+    "Keywords": "Employee, Management, System"
+  },
   "Navbar": {
     "Employees": "Employees",
     "Add New": "Add New"
   },
   "Employees": {
+    "Add Employee": "Add Employee",
+    "Edit Employee": "Edit Employee",
+    "Employee List": "Employee List",
+
     "First Name": "First Name",
     "Last Name": "Last Name",
     "Date of Employment": "Date of Employment",
@@ -11,7 +20,9 @@
     "Phone": "Phone",
     "Email": "Email",
     "Department": "Department",
-    "Position": "Position"
+    "Position": "Position",
+    "RecordWillBeDeleted": "Selected Employee record of {{name}} will be deleted",
+    "YouAreEditing": "You are editing {{name}}"
   },
   "Common": {
     "Save": "Save",
@@ -25,5 +36,13 @@
     "No": "No",
     "Are you sure?": "Are you sure?",
     "Actions": "Actions"
+  },
+  "NotFound": {
+    "Page Not Found": "Page Not Found",
+    "The page you are looking for does not exist": "The page you are looking for does not exist."
+  },
+  "Validation": {
+    "InvalidNumber": "Invalid number",
+    "InvalidDate": "Invalid date"
   }
 }

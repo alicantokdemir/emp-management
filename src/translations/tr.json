@@ -1,9 +1,18 @@
 {
+  "App": {
+    "Title": "Çalışan Yönetim Sistemi",
+    "Description": "Basit bir çalışan yönetim sistemi",
+    "Keywords": "Çalışan, Yönetim, Sistem"
+  },
   "Navbar": {
     "Employees": "Çalışanlar",
     "Add New": "Yeni Ekle"
   },
   "Employees": {
+    "Add Employee": "Çalışan Ekle",
+    "Edit Employee": "Çalışan Düzenle",
+    "Employee List": "Çalışan Listesi",
+
     "First Name": "Ad",
     "Last Name": "Soyad",
     "Date of Employment": "İşe Başlama Tarihi",
@@ -11,7 +20,9 @@
     "Phone": "Telefon",
     "Email": "E-posta",
     "Department": "Departman",
-    "Position": "Pozisyon"
+    "Position": "Pozisyon",
+    "RecordWillBeDeleted": "Seçilen {{name}} çalışan kaydı silinecektir",
+    "YouAreEditing": "{{name}} çalışanını düzenliyorsunuz"
   },
   "Common": {
     "Save": "Kaydet",
@@ -25,5 +36,13 @@
     "No": "Hayır",
     "Are you sure?": "Emin misiniz?",
     "Actions": "İşlemler"
+  },
+  "NotFound": {
+    "Page Not Found": "Sayfa Bulunamadı",
+    "The page you are looking for does not exist": "Aradığınız sayfa bulunamadı."
+  },
+  "Validation": {
+    "InvalidNumber": "Geçersiz numara",
+    "InvalidDate": "Geçersiz tarih"
   }
 }
