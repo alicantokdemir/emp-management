@@ -49,7 +49,7 @@ class LanguageSwitcher extends LitElement {
   constructor() {
     super();
     this.languages = ['en', 'tr'];
-    const path = window.location.pathname;
+    const path = window.location.pathname || '/en';
     this.selectedLanguage = path.split('/')[1];
     this.menuOpen = false;
   }
@@ -65,7 +65,6 @@ class LanguageSwitcher extends LitElement {
   }
 
   openMenu() {
-    console.log('open menu');
     this.menuOpen = true;
   }
 
