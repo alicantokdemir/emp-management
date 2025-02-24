@@ -44,5 +44,9 @@
   "Validation": {
     "InvalidNumber": "Geçersiz numara",
     "InvalidDate": "Geçersiz tarih"
+  },
+  "Home": {
+    "Welcome": "Çalışan Yönetim Sistemine Hoşgeldiniz",
+    "Intro": "Çalışan Yönetim Sistemine hoşgeldiniz. Çalışanları yönetmek için navigasyonu kullanın."
   }
 }

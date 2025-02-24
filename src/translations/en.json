@@ -44,5 +44,9 @@
   "Validation": {
     "InvalidNumber": "Invalid number",
     "InvalidDate": "Invalid date"
+  },
+  "Home": {
+    "Welcome": "Welcome to Employee Management System",
+    "Intro": "Welcome to the Employee Management System. Use the navigation to manage employees."
   }
 }
