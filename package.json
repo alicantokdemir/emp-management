@@ -8,8 +8,8 @@
   "scripts": {
     "start": "web-dev-server",
     "start:watch": "web-dev-server --watch",
-    "test": "web-test-runner src/**/*.test.js --coverage --node-resolve",
-    "test:watch": "web-test-runner src/**/*.test.js --node-resolve --watch"
+    "test": "web-test-runner \"src/**/*.test.js\" --coverage --node-resolve",
+    "test:watch": "web-test-runner \"src/**/*.test.js\" --node-resolve --watch"
   },
   "author": "Alican Tokdemir",
   "license": "MIT",
