@@ -1,25 +1,16 @@
-/**
- * @license
- * Copyright 2021 Google LLC
- * SPDX-License-Identifier: BSD-3-Clause
- */
-
-import {legacyPlugin} from '@web/dev-server-legacy';
-
-const mode = process.env.MODE || 'dev';
-if (!['dev', 'prod'].includes(mode)) {
-  throw new Error(`MODE must be "dev" or "prod", was "${mode}"`);
-}
-
-export default {
-  nodeResolve: {exportConditions: mode === 'dev' ? ['development'] : []},
-  preserveSymlinks: true,
-  plugins: [
-    legacyPlugin({
-      polyfills: {
-        // Manually imported in index.html file
-        webcomponents: false,
-      },
-    }),
+module.exports = {
+  rootDir: '.',
+  nodeResolve: true,
+  appIndex: 'index.html', // Main entry point
+  watch: true,
+  open: true,
+  plugins: [],
+  middleware: [
+    function staticFileMiddleware(ctx, next) {
+      if (ctx.url.startsWith('/images/')) {
+        ctx.url = `/public${ctx.url}`; // Map `/images/` to `/public/images/`
+      }
+      return next();
+    },
   ],
 };
