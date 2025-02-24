@@ -42,6 +42,10 @@ class AppButton extends LitElement {
   }
 
   handleClick(event) {
+    if (this.type === 'submit') {
+      this.closest('form').dispatchEvent(new Event('submit'));
+    }
+
     this.dispatchEvent(new CustomEvent('button-click', {detail: event}));
   }
 
