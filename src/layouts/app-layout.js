@@ -13,7 +13,7 @@ class AppLayout extends LitElement {
       background-color: #f8f8f8;
     }
     .content {
-      padding: 1rem;
+      padding: var(--spacing-5);
       overflow: hidden;
     }
 
